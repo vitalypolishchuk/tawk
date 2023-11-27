@@ -1,3 +1,4 @@
+console.log('loaded');
 export class Tawk {
     constructor({ position = 'bottom-right'}) {
         this.position = this.getPosition(position);
@@ -177,4 +178,8 @@ export class Tawk {
         
         console.log(formSubmission);
     }
-}
+};
+
+const tawk = new Tawk({
+    position: 'bottom-right',
+});
